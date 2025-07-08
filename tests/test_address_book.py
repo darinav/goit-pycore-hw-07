@@ -1,3 +1,5 @@
+#AI-generated
+
 import pytest
 from datetime import date, timedelta
 
