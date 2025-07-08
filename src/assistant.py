@@ -1,3 +1,6 @@
+from src.address_book import AddressBook
+
+
 def input_error(func):
     def inner(*args, **kwargs):
         try:
@@ -47,7 +50,7 @@ def show_all(args, contacts):
     return "\n".join([f"{name}: {phone}" for name, phone in contacts.items()])
 
 def main():
-    contacts = {}
+    contacts = AddressBook()
     print("Welcome to the assistant bot!")
 
     while True:
